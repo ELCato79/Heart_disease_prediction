@@ -22,7 +22,6 @@ using standerd MLOps practices.
 ├── pytest.ini
 └── README.md
 
-
 ---
 
 ##  MLOps Workflow
@@ -71,3 +70,4 @@ before any deployment.
 
 ## License
 MIT License
+
