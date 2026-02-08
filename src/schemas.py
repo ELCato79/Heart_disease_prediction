@@ -1,4 +1,5 @@
 from pydantic import BaseModel
+from typing import Optional
 
 
 class HeartDiseaseRequest(BaseModel):
@@ -15,3 +16,15 @@ class HeartDiseaseRequest(BaseModel):
     Slope_of_ST: int
     Number_of_vessels_fluro: int
     Thallium: int
+
+
+
+
+class ScreeningInput(BaseModel):
+    age: int
+    sex: Optional[int] = None        # 0=female, 1=male
+    bmi: Optional[float] = None
+    systolic_bp: Optional[int] = None
+    glucose: Optional[float] = None
+    smoker: Optional[int] = None     # 0/1
+
