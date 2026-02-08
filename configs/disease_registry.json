@@ -1,0 +1,38 @@
+{
+  "heart": {
+    "display_name": "Heart Disease",
+    "screenable": true,
+    "model_path": "model/heart_disease_model_v1.pkl",
+    "target": "target"
+  },
+  "diabetes": {
+    "display_name": "Diabetes",
+    "screenable": true,
+    "model_path": "model/diabetes_model_v1.pkl",
+    "target": "Outcome"
+  },
+  "hypertension": {
+    "display_name": "Hypertension",
+    "screenable": true,
+    "model_path": "model/hypertension_model_v1.pkl",
+    "target": "Has_Hypertension"
+  },
+  "stroke": {
+    "display_name": "Stroke",
+    "screenable": true,
+    "model_path": "model/stroke_model_v1.pkl",
+    "target": "stroke"
+  },
+  "ckd": {
+    "display_name": "Chronic Kidney Disease",
+    "screenable": true,
+    "model_path": "model/ckd_model_v1.pkl",
+    "target": "classification"
+  },
+  "parkinsons": {
+    "display_name": "Parkinson’s Disease",
+    "screenable": false,
+    "model_path": "model/parkinsons_model_v1.pkl",
+    "target": "status"
+  }
+}
