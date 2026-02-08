@@ -2,6 +2,9 @@ from pydantic import BaseModel
 from typing import Optional
 
 
+# =========================
+# Heart Disease
+# =========================
 class HeartDiseaseRequest(BaseModel):
     Age: int
     Sex: int
@@ -18,13 +21,27 @@ class HeartDiseaseRequest(BaseModel):
     Thallium: int
 
 
+# =========================
+# Diabetes
+# =========================
+class DiabetesRequest(BaseModel):
+    Pregnancies: int
+    Glucose: float
+    BloodPressure: float
+    SkinThickness: float
+    Insulin: float
+    BMI: float
+    DiabetesPedigreeFunction: float
+    Age: int
 
 
+# =========================
+# Generic Screening
+# =========================
 class ScreeningInput(BaseModel):
     age: int
-    sex: Optional[int] = None        # 0=female, 1=male
+    sex: Optional[int] = None
     bmi: Optional[float] = None
     systolic_bp: Optional[int] = None
     glucose: Optional[float] = None
-    smoker: Optional[int] = None     # 0/1
-
+    smoker: Optional[int] = None
